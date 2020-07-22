@@ -1,0 +1,21 @@
+{
+    "name": "ibrain90/yii2-multiform",
+    "description": "Расширение позволяет загружать, валидировать и сохранять данные с формы, которые имеют иерархический вид.  Обрабатывает случаи добавления, редактирования, удаления элементов во вложенных списках моделей.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","multiform"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Shestakov",
+            "email": "djbrain90@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "brain90\\multiform\\": ""
+        }
+    }
+}
