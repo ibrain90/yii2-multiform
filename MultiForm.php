@@ -483,8 +483,8 @@ class MultiForm
         $hasError = false;
 
         // вызывает хук beforeValidate если задан
-        if (!empty($metaData['beforeValidate'])) {
-            $hasError = !call_user_func($metaData['beforeValidate'], $this->rootModel) || $hasError;
+        if (!empty($this->metaData['beforeValidate'])) {
+            $hasError = !call_user_func($this->metaData['beforeValidate'], $this->rootModel) || $hasError;
         }
 
         $hasError = !$this->rootModel->validate() || $hasError;
